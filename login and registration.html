@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Register Modernized</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            /* background-color: rgb(21, 17, 98); */
+
+        }
+        body {
+          display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURExUYHSggGBolGxMTITEhJSkrLi4uFx8zODM4Nyg5OjcBCgoKDg0OFw8QFS0dFRkrKysrKystKysrLS0rLS0xKy0tLSsuKy0tLS0rLS03Ky0rLTgrKystOC0rLS0rKystN//AABEIALcBEwMBIgACEQEDEQH/xAAcAAADAQEBAAMAAAAAAAAAAAACAwQBAAUGBwj/xAAmEAADAAMAAgICAgIDAAAAAAAAAQIDERIhMQQTQVEicWGRBRSB/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDAAQF/8QAHhEBAQEBAQEAAgMAAAAAAAAAAAERAiESA0ETMWH/2gAMAwEAAhEDEQA/APuZIpx+kJ0HD0Ek8poujWwTNaVkQGh1LYtoaIdQM+Gn/ksVLW9ojYNGs0OfyfBfymnTaI8slVk2QZDq7dRVADgoaBaMS1NWMnyYi/jb0vbAy4HL0w6V57whrCVfWaoDpbNRvAKvAelyLuBpU7y8XP8AH2TX8Y9y8IisAZ0Sx4r+Dsmz/D0fJKwkvyMHhlJU3xnJ8cmyYD3cmAlyYBpReHkwE2TCe1kwkuXENDPGvCBWI9K8Qq8YWeZeMTWM9G8Yi8YRjz7xE1Yz07gmuAK81E4BcFTgCpFqkTcnD+ThTP1Zo7QzSBaOB6dgQWGwWEljtP3oBju0KYYXuFsWxlrQqhkOi7J8qKLMlLRrSTnXntGaZX8iF4Yrk0T78pKlp7XtBX1T2xswNUBLPUv1MzgrcmVJmvKXg5YtjWgpYSVJkw6E1iLsjE1IdJUVS0TZYbPQuSfJI8qdjzMuIjy4j18kEeaB4DyMuIky4j1ssEeWB4LycuMnuT0ssEmSB4yG4J7guuSbIgjIiyST1BdUCqgysROBbgtcC3AlUiTgwq+s4B36f2C2C0cjz3p1pjNa0C2YtYzGzGwWxkqym35FWG6FZKMSwq2LVtBtbM5ClfAvb9maGJGNBiPQYQ1C17GJhDllAjsUdUpKr+FOvG0/3sW1bn8XXU2PKr2Yda02n+HoEZzVzAoJsBsJKXYi0OpirY0JUuREmVFeRkuQeAjyojyovtbI8y0UjIcskmSS7KiXIhoKK5J7ktuRFyMaRHUC6gscAOAapIieMF4yx4zHjFqkQ/WaV/UcA79EaMaCOOB6QGgWNApGLYSxdMpU7OyY1rwEvyio360HUaM2YhTjRlQ17TX9ooxL+SbKM+uXv/z+w6T+OWW683RwbRinyM57yWzNlLRLXthlL1xgsOZzSr/f9Ft/8hCXjbf60ecwGCyVufy98TIyq22/29g7NZ0exkQ0LbKb9ElMxaC2JyMO2ItjQhWRk2RjsjJ8jHjEVeiXPW/JRkJrHjYlyIntFdyKqBtPIjuRTgteMF4zaeconjBeMt+s76wapIi+oz6i76jvpBaeRD9Rxf8ASYA2Pu0w444noNBZzZgQtcZTObAbMS3A2gNBtgthxO12jqkHZuwktBUir8DmxGYKXVC8j/YpnNgugyJddO036AtNex2Gl5B+VS5DiV6TugXQp2D0HCXo6s37EVYNMTbCW0VUIuwbyCbsaQutuie6NuxNUMaBtiqDYDCeQqkA5HNGcm1SQjkzgo5O5Np5E/ByxlCgJQDTyJ1jNWMpUBLGDTyJfqOLPrOBovtICgtgNnM7eq7Zy8mHJ6MTXWtC2w7rYthhO774LGtsbcJonVa9G3mbWjY075k9K2d0YwWx3Na10JysJsTkYUuqW2BTG56hv+CaWl4f7EUaI9+XBYsdW3z+PzsRm2m1XtDceeo3rXn9k2a3TbftjJ9WZ/pVPybsW35CZiRjYu2ExdBFLl9iaY7MIaGhP2BsW0NaBchV5LaM0M5O5NqshXJ3I7gKcYNVkI4N4KfqOeMGnidQEoHKA1ANPISoG48GxigpifANGp/+ujC3g4wPmezDmZsg67XHGbMbCS1zAoLYFMJaB0D0FkpNJJaa9v8AYino2p9QzYLYr7A4a/IyVDdE+Sh2fX4JaYUunbBbMbBaYUenUxGRhtiqClSmaqMYDCTcG2Kujm2BRh+iq8gOR3IeGJdfy9B0eYl5MclFytvXrfgHk2rcwnk3kdwEoBqsImBigaoDUA1SE8HcD+DuQaeROoDUDFAagXVIUoGR4DUhKTaOB2aHycbWx8xa2TthZc6S8eWT9k46O7DXQLoU7Oy5V40FIzoGqFKzdmZjYFMJsVbCToqn5DVCKoHsZz9U+qJqo6rAbCja1szsBsrjFHCel5Xlh3Czm9IqYugqBYUaBgMNmNBIW0DoY0ZowyA0dyM0dox5C+TuRvJqkXVoXMhKRkyEpBqkDjwuvQVY3Pso+PSXhnZ2n6F1WRNozkbyapNapIUoCUjVJqkXT4WpCUjFISk2jhfJw3k42tj03RnQDoHowaOmLbCbFUwhaLoKb2IdGxk0zYX6UXtE91sZeZa0Iphhe6C2LdBWxVMZC1rYLZjYLYUrW7OdP1sHZmwp2tYLO2YElcY0acYodG6NRoDRmjtBaGLWgKQpSFyMxSm9PwjqlbevQurSASDSOSCSBqkjFIXJqN0DVZA6NUhpByhdUkCoCUBpDMeNs2mwjk7kdknQOhdPIDRgzRxtbB0wejKYGyuObTVQNMFUa2YdLpgdG0LbCnaPo7YvZ3QcJ9CoL5Px6xqG2n3PS096/v8A2K2DTCW2YBsFs1gNjI2i2ZsHZmwp2i2cDs7ZiUezgNmpgGDRoOzdgPIfhnG5t3TVJfwSW03/AJAQCYSFVgkEkCmEgKyNSCSMQSFVkakEkYgkKrI1IKQUEhVJDEinBS0SphbApOTfkNNidGmgNOQmmmGH5JpgbMpgtnS8y9C2EqFbNVGb6bYqhlCqDC9ULZmzmA2FK9D6MbA2Z0HC3oTYujdgthJaxsHoymLdBJTOjuxDyGdhwMUKguiXs1WBSRUqCVEqsJWKpOVSoJUTKwlYtVnKlMJMnVBqharzyoTCTEKg1QlWnJyYaYqPJTEICkmBQSCcIB+BarzNMRqATNTFVnJhwKZuwH+RGGbOM3yipg7OOOt4NrNmpmHGDR7F0acFrfCaAbNOCjQNg7OOGTtY6MdGHBbS7YmqOOMJNWB9hpwTcs+w1ZDjgLcwSyBrIccLVuYOcgybMOFqshisZNmHCVWQxWMmjjhVJFnx/RSjjgN+xIDKccLVeP7OjWhV+zjia/LkzdnHGVjtnHHAZ//Z") no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: #29cd73; */
+        }
+
+        .login-section {
+            width: 350px;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .formbox {
+            padding: 20px;
+        }
+        .wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(9px);
+    color: #1e0303;
+    border-radius: 12px;
+    padding: 30px 40px;
+     background-color: #b2e4da; 
+    
+  }
+
+        h2 {
+            text-align: center;
+            font-size: 25px;
+            color: #333;
+            margin-bottom: 24px;
+        }
+        .input-box {
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+            border-bottom: 1px solid #242020;
+            padding-bottom: 10px;
+        }
+        .input-box input {
+            width: 100%;
+            height: 40px;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            color: #211d1d;
+        }
+        .input-box label {
+            position: absolute;
+            top: -14px;
+            left: 0;
+            transition: .5s;
+            font-size: 12px;
+            color: #2e2c2c;
+        }
+        .btn {
+            width: 100%;
+            background: #1e75d3;
+            color: #2e2c2c;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 0;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .create-account {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
+            color:  #3a424b;
+        }
+        .create-account a {
+            color:  #0c1c2d;
+            text-decoration: none;
+        }
+        .create-account a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="login-section">
+        <div class="formbox" id="login-form">
+            <form action="javascript:void(0);">
+                <h2>LOGIN FORM</h2><br>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btn">SUBMIT</button>
+                <div class="create-account">
+                    <p>Don't have an account? <a href="javascript:void(0);" id="show-signup">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="formbox" id="signup-form" style="display: none;">
+            <form action="javascript:void(0);">
+                <h2>REGISTRATION FORM</h2><br><br>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Confirm Password</label>
+                </div>
+                <button type="submit" class="btn">SUBMIT</button>
+                <div class="create-account">
+                    <p>Already have an account? <a href="javascript:void(0);" id="show-login">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+    <script>
+        document.getElementById('show-signup').addEventListener('click', function() {
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('signup-form').style.display = 'block';
+        });
+
+        document.getElementById('show-login').addEventListener('click', function() {
+            document.getElementById('signup-form').style.display = 'none';
+            document.getElementById('login-form').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
